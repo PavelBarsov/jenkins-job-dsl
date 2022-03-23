@@ -1,4 +1,4 @@
-job("day6/MNTLAB-pbarsau-main-build-job"){
+job("Day-6/MNTLAB-pbarsau-main-build-job"){
   parameters {
     activeChoiceParam('BRANCH_NAME') {
       description('Branch name')
@@ -53,7 +53,7 @@ return branches
 }
 
 for(int i = 1;i<5;i++) {
-  job("day6/MNTLAB-pbarsau-child${i}-build-job"){
+  job("Day-6/MNTLAB-pbarsau-child${i}-build-job"){
     parameters {
       stringParam('BRANCH_NAME', '', 'Branche name')
     } 
